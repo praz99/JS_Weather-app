@@ -13,14 +13,32 @@ body {
 
 .container {
   text-align: center;
-  border: 2px solid green;
-  background:lightgoldenrodyellow;
   width: 60%;
   margin: 0 auto;
   border-radius: 8px;
+  background-color: lightgoldenrodyellow;
 }
 
-.search-city {
+.form-search-city {
   display: flex;
-  border: 2px solid red;
+  height: 2.3em;
 }
+
+.name-city-input {
+  border: 1px solid black;
+  background: rgb(239 239 239);
+  width: 100%;
+  font-size: 16px;
+  margin-right: 2px;
+}
+
+.name-city-input:focus {
+  outline: none;
+}
+
+.btn-city-input {
+  width: 25%;
+  border: 1px solid black;
+}
+
+.display-weather {}

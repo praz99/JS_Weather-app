@@ -13,13 +13,24 @@
       <h5>Search by city name.</h5>
     </header>
     <main>
-      <form class="search-city" data-search-city-form>
-        <div class="city-input">
-          <label for="input-city-name">City:</label>
-          <input type="text" id="input-city-name" placeholder="Enter city name here..." data-city-name-input>
-        </div>
-        <button type="submit" class="btn-input" id="btn-input-city" data-search-city-button>Search</button>
+      <form class="form-search-city" data-search-city-form>
+        <input type="text" class="name-city-input" id="name-input-city" placeholder="Enter city name here..." data-city-name-input>
+        <button type="submit" class="btn-city-input" id="btn-city-input" data-search-city-button>Search</button>
       </form>
+      <div class="display-weather">
+        <h3>Bydgoszcz, PL</h3>
+        <div class="main-weather-info">
+          <div class="main">Drizzle</div>
+          <div class="description">Light intensity drizzle</div>
+          <div class="icon"></div>
+        </div>
+        <div class="main-weather-temp">
+          <p>Temperature: 11C</p>
+          <p>Feels Like: 11C</p>
+          <p>Max: 11C</p>
+          <p>Min: 11C</p>
+        </div>
+      </div>
     </main>
   </div>
 </body>
