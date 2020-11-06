@@ -1,4 +1,4 @@
 import './style.css';
-import Weather from './logic';
+import getCity from './input';
 
-Weather();
+console.log(getCity());

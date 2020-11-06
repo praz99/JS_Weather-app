@@ -14,22 +14,23 @@
     </header>
     <main>
       <form class="form-search-city" data-search-city-form>
-        <input type="text" class="name-city-input" id="name-input-city" placeholder="Enter city name here..." data-city-name-input>
+        <input type="text" class="name-city-input" id="name-input-city" placeholder="Enter city name here..." data-city-name-input required>
         <button type="submit" class="btn-city-input" id="btn-city-input" data-search-city-button>Search</button>
       </form>
-      <div class="display-weather">
-        <h3>Bydgoszcz, PL</h3>
+      <div class="display-weather" data-display-weather-container>
+        <h3 data-show-city-country></h3>
         <div class="main-weather-info">
-          <div class="main">Drizzle</div>
-          <div class="description">Light intensity drizzle</div>
+          <div class="main" data-show-weather-main></div>
+          <div class="description" data-show-weather-desc></div>
           <div class="icon"></div>
         </div>
         <div class="main-weather-temp">
-          <p>Temperature: 11C</p>
-          <p>Feels Like: 11C</p>
-          <p>Max: 11C</p>
-          <p>Min: 11C</p>
+          <p data-show-temp-main></p>
+          <p data-show-temp-feel></p>
+          <p data-show-temp-max></p>
+          <p data-show-temp-min></p>
         </div>
+        <div class="show-wind" data-show-wind></div>
       </div>
     </main>
   </div>
