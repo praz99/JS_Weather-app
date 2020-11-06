@@ -7,6 +7,20 @@
   <script src="bundle.js" defer></script>
 </head>
 <body>
-  
+  <div class="container">
+    <header>
+      <h1>Weather Today</h1>
+      <h5>Search by city name.</h5>
+    </header>
+    <main>
+      <form class="search-city" data-search-city-form>
+        <div class="city-input">
+          <label for="input-city-name">City:</label>
+          <input type="text" id="input-city-name" placeholder="Enter city name here..." data-city-name-input>
+        </div>
+        <button type="submit" class="btn-input" id="btn-input-city" data-search-city-button>Search</button>
+      </form>
+    </main>
+  </div>
 </body>
 </html>
