@@ -16,7 +16,20 @@ body {
   width: 60%;
   margin: 0 auto;
   border-radius: 8px;
-  background-color: lightgoldenrodyellow;
+}
+
+header {
+  background: lightgoldenrodyellow;
+  border-radius: 8px;
+  margin: 4em 0 0.5em 0;
+  padding: 2em;
+}
+
+.form-container {
+  background: lightgoldenrodyellow;
+  border-radius: 8px;
+  padding: 1em;
+  margin-bottom: 0.5em;
 }
 
 .form-search-city {
@@ -27,18 +40,35 @@ body {
 .name-city-input {
   border: 1px solid black;
   background: rgb(239 239 239);
-  width: 100%;
+  width: 75%;
   font-size: 16px;
   margin-right: 2px;
-}
-
-.name-city-input:focus {
-  outline: none;
+  border-radius: 5px 0 0 5px;
+  padding-left: 0.7em;
 }
 
 .btn-city-input {
   width: 25%;
   border: 1px solid black;
+  border-radius: 0 5px 5px 0;
 }
 
-.display-weather {}
+.name-city-input:focus,
+.btn-city-input:focus {
+  outline: none;
+}
+
+.btn-city-input:hover {
+  background: rgb(220 233 236);
+}
+
+.display-weather {
+  border: 1px solid black;
+  background: lightgoldenrodyellow;
+  border-radius: 8px;
+  height: 13em;
+  padding: 2em 0 1em 0;
+
+  display: flex;
+  justify-content: space-between;
+}
