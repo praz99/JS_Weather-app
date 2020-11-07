@@ -8,24 +8,23 @@ const showTempMax = document.querySelector('[data-show-temp-max]');
 const showTempMin = document.querySelector('[data-show-temp-min]');
 const showWind = document.querySelector('[data-show-wind]');
 
-const weatherContainer = document.querySelector('[data-display-weather-container]');
-
 const api_key = '108f7da063795b7306e8b024f6068b48';
+
+let unit = 'metric';
 
 const getWeather = async(city) => {
   try {
-    const response = await fetch(`http://api.openweathermap.org/data/2.5/weather?q=${city}&APPID=${api_key}&units=metric`, {mode: 'cors'});
+    const response = await fetch(`http://api.openweathermap.org/data/2.5/weather?q=${city}&APPID=${api_key}&units=${unit}`, {mode: 'cors'});
     const getData = await response.json();
     showCity.innerText = getData.name;
     showCountry.innerText = getData.sys.country;
     showWeatherMain.innerText = getData.weather[0].main;
     showWeatherDesc.innerText = getData.weather[0].description;
     showTempMain.innerText = Math.round(getData.main.temp);
-    showTempFeel.innerText = Math.round(getData.main.feels_like);
-    showTempMax.innerText = Math.round(getData.main.temp_max);
-    showTempMin.innerText = Math.round(getData.main.temp_min);
-    showWind.innerText = getData.wind.speed;
-    console.log(getData);
+    showTempFeel.innerText = `Feels Like ${Math.round(getData.main.feels_like)}`;
+    showTempMax.innerText = `Max: ${Math.round(getData.main.temp_max)}`;
+    showTempMin.innerText = `Min: ${Math.round(getData.main.temp_min)}`;
+    showWind.innerText = `Wind: ${getData.wind.speed}`;
   } catch(err) {
     showCity.innerText = `No data available for ${city}`;
     showCountry.innerText = '';

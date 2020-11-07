@@ -64,11 +64,28 @@ header {
 
 .display-weather {
   border: 1px solid black;
-  background: lightgoldenrodyellow;
+  background: lightslategrey;
   border-radius: 8px;
   height: 13em;
   padding: 2em 0 1em 0;
 
   display: flex;
   justify-content: space-between;
+  color: white;
+}
+
+.show-country {
+  font-size: 14px;
+}
+
+.show-city {
+  font-size: 20px;
+}
+
+.main-weather-temp {
+  text-align: left;
+}
+
+.main-temp {
+  font-size: 6em;
 }
