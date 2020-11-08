@@ -8,6 +8,8 @@ const showTempMax = document.querySelector('[data-show-temp-max]');
 const showTempMin = document.querySelector('[data-show-temp-min]');
 const showWind = document.querySelector('[data-show-wind]');
 
+const switchButton = document.querySelector('[data-switch-unit]');
+
 const api_key = '108f7da063795b7306e8b024f6068b48';
 
 const getWeather = async(city, unit) => {
@@ -32,8 +34,10 @@ const getWeather = async(city, unit) => {
     showTempMax.innerText = `Max: ${Math.round(getData.main.temp_max)}\xB0${showTempUnit}`;
     showTempMin.innerText = `Min: ${Math.round(getData.main.temp_min)}\xB0${showTempUnit}`;
     showWind.innerText = `Wind: ${getData.wind.speed} ${showWindUnit}`;
+    switchButton.style.display = 'block';
   } catch(err) {
     showCity.innerText = `No data available for ${city}`;
+    switchButton.style.display = 'none';
     showCountry.innerText = '';
     showWeatherMain.innerText = '';
     showWeatherDesc.innerText = '';
