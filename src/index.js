@@ -1,4 +1,5 @@
 import './style.css';
-import getCity from './input';
+import { getCity, toggleUnit } from './input';
 
 getCity();
+toggleUnit();
