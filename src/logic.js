@@ -10,20 +10,20 @@ const showWind = document.querySelector('[data-show-wind]');
 
 const switchButton = document.querySelector('[data-switch-unit]');
 
-const api_key = '108f7da063795b7306e8b024f6068b48';
+const API_KEY = '108f7da063795b7306e8b024f6068b48';
 
-const getWeather = async(city, unit) => {
+const getWeather = async (city, unit) => {
   try {
     let showTempUnit;
     let showWindUnit;
-    if(unit === 'metric') {
+    if (unit === 'metric') {
       showTempUnit = 'C';
       showWindUnit = 'm/s';
     } else {
       showTempUnit = 'F';
       showWindUnit = 'F/s';
     }
-    const response = await fetch(`http://api.openweathermap.org/data/2.5/weather?q=${city}&APPID=${api_key}&units=${unit}`, {mode: 'cors'});
+    const response = await fetch(`http://api.openweathermap.org/data/2.5/weather?q=${city}&APPID=${API_KEY}&units=${unit}`, { mode: 'cors' });
     const getData = await response.json();
     showCity.innerText = getData.name;
     showCountry.innerText = getData.sys.country;
@@ -35,7 +35,7 @@ const getWeather = async(city, unit) => {
     showTempMin.innerText = `Min: ${Math.round(getData.main.temp_min)}\xB0${showTempUnit}`;
     showWind.innerText = `Wind: ${getData.wind.speed} ${showWindUnit}`;
     switchButton.style.display = 'block';
-  } catch(err) {
+  } catch (err) {
     showCity.innerText = `No data available for ${city}`;
     switchButton.style.display = 'none';
     showCountry.innerText = '';
@@ -47,6 +47,6 @@ const getWeather = async(city, unit) => {
     showTempMin.innerText = '';
     showWind.innerText = '';
   }
-}
+};
 
 export default getWeather;

@@ -29,7 +29,7 @@ header {
   border: 1px solid black;
   background: rgba(131, 131, 128, 0.5);
   border-radius: 8px;
-  margin-bottom:0.5em;
+  margin-bottom: 0.5em;
   padding: 2em;
 }
 
@@ -62,6 +62,10 @@ header {
   border-radius: 0 5px 5px 0;
 }
 
+.switch-unit {
+  padding: 8px;
+}
+
 .name-city-input:focus,
 .btn-city-input:focus,
 .switch-unit:focus {
@@ -81,7 +85,6 @@ header {
   padding: 2em;
   justify-content: space-between;
   color: white;
-
   display: none;
 }
 
@@ -100,8 +103,4 @@ header {
 
 .main-temp {
   font-size: 6em;
-}
-
-.switch-unit {
-  padding: 8px;
 }

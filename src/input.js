@@ -10,25 +10,24 @@ const LOCAL_STORAGE_CITY_NAME = 'weather.city';
 
 
 const getUnit = () => {
-  if(switchBtn.innerHTML === 'Celcius') {
+  if (switchBtn.innerHTML === 'Celcius') {
     return 'imperial';
-  } else {
-    return 'metric';
   }
-}
+  return 'metric';
+};
 
 const toggleUnit = () => {
   switchBtn.addEventListener('click', e => {
     e.preventDefault();
-    if(switchBtn.innerHTML === 'Celcius') {
+    if (switchBtn.innerHTML === 'Celcius') {
       switchBtn.innerHTML = 'Fahrenheit';
     } else {
       switchBtn.innerHTML = 'Celcius';
     }
-  
+
     Weather(JSON.parse(localStorage.getItem(LOCAL_STORAGE_CITY_NAME)), getUnit());
   });
-}
+};
 
 const getCity = () => {
   newForm.addEventListener('submit', e => {
