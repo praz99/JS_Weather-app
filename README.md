@@ -1,7 +1,8 @@
 # Weather App
 > This project is a simple web app that shows the weather report of a choosen city all over the world.  
 > In this app, users can enter the name of a city and see the weather. Users can switch between metric units (celcius degree) and imperial units (fahrenheit degree) to see the results.  
-> This project is created as an assignment from JavaScript module of Microverse main curriculum. The main purpose of this project is to practice JavaScript Async-Await functions and working with APIs.
+> This project is created as an assignment from JavaScript module of Microverse main curriculum. The main purpose of this project is to practice JavaScript Async-Await functions and working with APIs.  
+>The [OpenWeather](https://openweathermap.org/) API has been used to get the weather information.
 
 ![screenshot](src/img/weather-app.png)
 
@@ -46,7 +47,7 @@ Feel free to check the [issues page](issues/).
 Give a ⭐️ if you like this project!
 
 ## Acknowledgments
-
+- [OpenWeather](https://openweathermap.org/)
 - [The Odin Project](https://www.theodinproject.com/courses/javascript/lessons/weather-app)
 - [Webpack](https://webpack.js.org/)
 - All images used are taken from [UnSplash](https://unsplash.com/)
