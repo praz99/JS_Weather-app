@@ -12,7 +12,7 @@
 
 ## Live Demo
 
-[Live Demo Link](https://raw.githack.com/praz99/JS-Weather-app/feature/weather-app/dist/index.html)
+[Live Demo Link](https://weather-app-praz.netlify.app/)
 
 ## Getting Started
 
