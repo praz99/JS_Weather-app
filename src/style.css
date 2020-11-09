@@ -1,0 +1,106 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+body {
+  background: lightblue;
+  margin: 0 auto;
+}
+
+.container {
+  text-align: center;
+  width: 60%;
+  border-radius: 8px;
+  background-image: url('./img/aaron-burden-BTubi6qaY6Q-unsplash.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 1em;
+  position: fixed;
+  top: 2em;
+  left: 16em;
+}
+
+header {
+  border: 1px solid black;
+  background: rgba(131, 131, 128, 0.5);
+  border-radius: 8px;
+  margin-bottom: 0.5em;
+  padding: 2em;
+}
+
+.form-container {
+  background: rgba(131, 131, 128, 0.5);
+  border-radius: 8px;
+  padding: 1em;
+  margin-bottom: 0.5em;
+  border: 1px solid black;
+}
+
+.form-search-city {
+  display: flex;
+  height: 2.3em;
+}
+
+.name-city-input {
+  border: 1px solid black;
+  background: rgb(239 239 239);
+  width: 75%;
+  font-size: 16px;
+  margin-right: 2px;
+  border-radius: 5px 0 0 5px;
+  padding-left: 0.7em;
+}
+
+.btn-city-input {
+  width: 25%;
+  border: 1px solid black;
+  border-radius: 0 5px 5px 0;
+}
+
+.switch-unit {
+  padding: 8px;
+}
+
+.name-city-input:focus,
+.btn-city-input:focus,
+.switch-unit:focus {
+  outline: none;
+}
+
+.btn-city-input:hover,
+.switch-unit:hover {
+  background: rgb(220 233 236);
+}
+
+.display-weather {
+  border: 1px solid black;
+  background: rgba(131, 131, 128, 0.5);
+  border-radius: 8px;
+  height: 16em;
+  padding: 2em;
+  justify-content: space-between;
+  color: white;
+  display: none;
+}
+
+.show-country {
+  font-size: 14px;
+}
+
+.show-city,
+.main-weather-info .main {
+  font-size: 25px;
+}
+
+.main-weather-temp {
+  text-align: left;
+}
+
+.main-temp {
+  font-size: 6em;
+}

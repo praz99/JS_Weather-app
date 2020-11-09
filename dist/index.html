@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="bundle.js" defer></script>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Weather Today</h1>
+      <h5>Search by city name.</h5>
+    </header>
+    <main>
+      <div class="form-container">
+        <form class="form-search-city" data-search-city-form>
+          <input type="text" class="name-city-input" id="name-input-city" placeholder="Enter city name here..." data-city-name-input required>
+          <button type="submit" class="btn-city-input" id="btn-city-input" data-search-city-button>Search</button>
+        </form>
+      </div>
+      <div class="display-weather" data-display-weather-container>
+        <div class="show-city-country">
+          <div class="show-city" data-show-city></div>
+          <div class="show-country" data-show-country></div>
+        </div>
+        <div class="main-weather-info">
+          <div class="main" data-show-weather-main></div>
+          <div class="description" data-show-weather-desc></div>
+        </div>
+        <div class="main-weather-temp">
+          <p class="temp main-temp" data-show-temp-main></p>
+          <p class="temp" data-show-temp-feel></p>
+          <p class="temp" data-show-temp-max></p>
+          <p class="temp" data-show-temp-min></p>
+          <button class="switch-unit" id="switch-unit" data-switch-unit>Celcius</button>
+        </div>
+        <div class="show-wind" data-show-wind></div>
+      </div>
+    </main>
+  </div>
+</body>
+</html>
