@@ -21,9 +21,9 @@ const getWeather = async (city, unit) => {
       showWindUnit = 'm/s';
     } else {
       showTempUnit = 'F';
-      showWindUnit = 'F/s';
+      showWindUnit = 'f/s';
     }
-    const response = await fetch(`http://api.openweathermap.org/data/2.5/weather?q=${city}&APPID=${API_KEY}&units=${unit}`, { mode: 'cors' });
+    const response = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&APPID=${API_KEY}&units=${unit}`, { mode: 'cors' });
     const getData = await response.json();
     showCity.innerText = getData.name;
     showCountry.innerText = getData.sys.country;
